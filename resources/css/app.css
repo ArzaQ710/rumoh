@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Carousel */
+#carousel {
+    background-image: url("https://images.unsplash.com/photo-1488707872600-5507977fe355?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shadow-none__input,
+.select__input {
+    box-shadow: none !important;
+}
+
+@media (min-width: 768px) {
+    /* Carousel */
+    #carousel-search {
+        width: 500px;
+    }
+
+    /* Why Us */
+    #why-us .card-container {
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+    }
+
+    /* Why Us Card */
+    #why-us .card {
+        max-width: 288px;
+    }
+
+    /* Property Card */
+    /* .property.card {
+        width: calc(100% / 3 - 32px);
+    } */
+}
+
+@media (min-width: 1024px) {
+    /* Property Card */
+    /* .property.card {
+        width: calc(100% / 4 - 32px);
+    } */
+}
+
+/* React Select */
+.react-select__control {
+    border: none !important;
+    border-radius: 1.5rem !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    box-shadow: none !important;
+}
+.react-select__menu {
+    border: none !important;
+    border-radius: 1.5rem !important;
+    overflow: hidden;
+    padding: 0;
+}
+.react-select__input {
+    box-shadow: none !important;
+}
+.react-select__multi-value {
+    border-radius: 1.5rem !important;
+}
